@@ -1,4 +1,4 @@
-import sprint.ArrayInitializer;
+package sprint;
 
 public class Main {
 
