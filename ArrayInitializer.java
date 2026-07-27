@@ -3,17 +3,17 @@ package sprint;
 public class ArrayInitializer {
     public int[] fillArray(int max) {
 
+        if ( max < 1){
+            return new int [0];
+        }
+
         int [] x = new int [max];
         int result = 1;
 
-        if ( max < 1){
-            return null;
-        }else {
-          for (int i = 0; i < x.length; i ++){
+        for (int i = 0; i < x.length; i ++){
             x [i] = result++;
-        }  
         }
-
+        
         return x;     
     }
 }
