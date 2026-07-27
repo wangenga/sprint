@@ -7,7 +7,7 @@ public class ArrayInitializer {
         int result = 1;
 
         if ( max < 1){
-            return new int[0];
+            return null;
         }else {
           for (int i = 0; i < x.length; i ++){
             x [i] = result++;
