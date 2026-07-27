@@ -1,3 +1,5 @@
+package sprint;
+
 public class ArrayInitializer {
     public int[] fillArray(int max) {
 
