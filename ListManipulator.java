@@ -16,7 +16,7 @@ public class ListManipulator {
         }
         
         list.add("last");
-        list.add(0, "first");
+        list.set(0, "first");
         return list;
     }
     
