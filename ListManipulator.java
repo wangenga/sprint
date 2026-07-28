@@ -12,7 +12,7 @@ public class ListManipulator {
             list.remove(n-1); 
         }
         if (!list.isEmpty()){
-            list.set(list.size() - 1,"The size of the list is " + n);
+            list.set(list.size() - 1,"The size of the list is " + n-1);
         }
         
         list.add("last");
