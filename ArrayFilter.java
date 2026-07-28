@@ -9,7 +9,7 @@ public class ArrayFilter {
         for (int[] row : x){
             int sum = 0;
             for (int num: row){
-                sum += target;
+                sum += num;
             }
             if (sum >= target){
                 z.add(row);
