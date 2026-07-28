@@ -9,9 +9,9 @@ public class ArrayFilter {
         for (int[] row : x){
             int sum = 0;
             for (int num: row){
-                sum =+ target;
+                sum += target;
             }
-            if (sum < target){
+            if (sum >= target){
                 z.add(row);
             }
         }
