@@ -10,20 +10,22 @@ public class ArrayModifier {
             index1 = index2;
             index2 = temp;
         }
-
         int sz = list.size();
 
         if (index1 < 0 ){
             index1 = 0;
-        }
-        if (index2 < 0){
-            index2 = 0;
+        } else if (index1 > sz){
+            index1 = sz;
         }
 
-        for (int i = 0; i < sz - 1; i++){
-            if (list.get(i) >= index1 && list.get(i) < index2){
-                list.remove(i);
-            }
+        if (index2 < 0){
+            index2 = 0;
+        } else if (index2 > sz){
+            index2 = sz;
+        }
+
+        for (int i = index2 - 1; i >= index1; i--){
+            list.remove(i);
         }
         return list;
     }
