@@ -1,15 +1,19 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-        list.add("A");
-        list.add("B");
-        list.add("C");
-        ListManipulator listManipulator = new ListManipulator();
-        list = listManipulator.manipulateList(list);
-        System.out.println(list);
+        ArrayList<Double> list = new ArrayList<>();
+        list.add(1.5);
+        list.add(2.5);
+        list.add(3.5);
+        list.add(4.5);
+        list.add(5.5);
+
+        ArrayList<Double> result = ArrayModifier.removeElementsBetween(list, 1, 3);
+
+        for (double num : result) {
+            System.out.print(num + " ");
+        }
     }
 }
