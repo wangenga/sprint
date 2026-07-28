@@ -1,4 +1,4 @@
-package sprint;
+//package sprint;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -11,8 +11,11 @@ public class ListManipulator {
         if ( n > 0){
             list.remove(n-1); 
         }
-        list.add("The size of the list is " + n--);
-        list.add(n + 1, "last");
+        if (!list.isEmpty()){
+            list.set(list.size() - 1,"The size of the list is " + n);
+        }
+        
+        list.add("last");
         list.add(0, "first");
         return list;
     }
