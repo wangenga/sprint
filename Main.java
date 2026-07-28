@@ -1,12 +1,15 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
-        int[] arr1 = {1, 2, 3};
-        int[] arr2 = {4, 5, 6};
-        int[] result = ArrayAdder.concatArrays(arr1, arr2);
-
-        for (int num : result) {
-            System.out.print(num + " ");
-        }
+        List<String> list = new ArrayList<>();
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        ListManipulator listManipulator = new ListManipulator();
+        list = listManipulator.manipulateList(list);
+        System.out.println(list);
     }
 }
