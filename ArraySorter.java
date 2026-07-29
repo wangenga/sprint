@@ -1,5 +1,4 @@
-package sprint;
-import java.util.Arrays;
+//package sprint;
 
 public class ArraySorter {
     public double[] sortArray(double[] arr) {

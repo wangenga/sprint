@@ -1,7 +1,6 @@
-package sprint;
+//package sprint;
 
 import java.util.List;
-import java.util.ArrayList;
 
 public class ListManipulator {
 

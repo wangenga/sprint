@@ -1,7 +1,6 @@
-package sprint;
+//package sprint;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class ArrayModifier {
     public static ArrayList<Double> removeElementsBetween(ArrayList<Double> list, int index1, int index2) {

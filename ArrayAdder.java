@@ -1,6 +1,6 @@
-package sprint;
+//package sprint;
 
-import java.util.Arrays;
+
 
 public class ArrayAdder {
     public static int[] concatArrays(int[] arr1, int[] arr2) {

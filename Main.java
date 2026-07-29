@@ -1,11 +1,13 @@
 import java.util.Arrays;
-import java.util.Map;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        WordLengthAnalyzer analyzer = new WordLengthAnalyzer();
-        Map<Integer, Integer> result = analyzer.analyzeWordLengths(Arrays.asList("apple", "banana", "cherry", "date", "fig"));
-        System.out.println(result);
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+        CustomIterator iterator = new CustomIterator(numbers);
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
