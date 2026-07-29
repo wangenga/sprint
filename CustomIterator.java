@@ -1,7 +1,9 @@
-package sprint;
+//package sprint;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class CustomIterator implements Iterator<Integer> {
     private List<Integer> numbers;
@@ -22,6 +24,11 @@ public class CustomIterator implements Iterator<Integer> {
 
     @Override
     public Integer next(){
+
+        if (!hasNext()){
+            throw new NoSuchElementException("No more elements in the list");
+        }
+
         return numbers.get(cindex++);
     }
 }
