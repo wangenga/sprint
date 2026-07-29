@@ -4,9 +4,16 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        UsernameProcessor processor = new UsernameProcessor();
-        List<String> usernames = Arrays.asList("usr", "user12", "test", "validUser", "12345");
-        String firstUsername = processor.findFirstUsername(usernames);
-        System.out.println(firstUsername);
+        EmailDomainExtractor extractor = new EmailDomainExtractor();
+        List<String> emails = Arrays.asList(
+                "USER1@EXAMPLE.COM",
+                "user2@Example.com",
+                "user1@EXAMPLE.COM",
+                "user3@SAMPLE.ORG",
+                "INVALIDEMAIL@",
+                "user4@SAMPLE.ORG"
+        );
+        List<String> domains = extractor.extractDomains(emails);
+        domains.forEach(System.out::println);
     }
 }
