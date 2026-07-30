@@ -1,10 +1,11 @@
 public class Main {
 
     public static void main(String[] args) {
-        String testString1 = "A man, a plan, a canal, Panama";
-        String testString2 = "radar ";
-        System.out.println(PalindromeChecker.isPalindrome(testString1));
-        System.out.println(PalindromeChecker.isPalindrome(testString2));
+        String string1 = "Listen";
+        String string2 = "Silent";
+        String string3 = "Hello";
+        System.out.println(AnagramChecker.areAnagrams(string1, string2));
+        System.out.println(AnagramChecker.areAnagrams(string1, string3));
     }
 
 }
