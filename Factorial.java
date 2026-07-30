@@ -1,4 +1,4 @@
-package sprint;
+//package sprint;
 public class Factorial {
     public int calculateFactorial(int n){
         if (n < 0){
