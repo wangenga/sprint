@@ -6,12 +6,6 @@ public class ParenthesesBalanceChecker {
             return false;
         }
 
-        
-
-        if (str.length() % 2 != 0 ){
-            return false;
-        }
-        
         return checkBalance(str, 0, 0);
         
 
