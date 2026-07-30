@@ -6,7 +6,7 @@ public class ParenthesesBalanceChecker {
             return false;
         }
 
-        str = str.replaceAll("[^()]", "");
+        
 
         if (str.length() % 2 != 0 ){
             return false;
@@ -29,11 +29,9 @@ public class ParenthesesBalanceChecker {
         
         if (str.charAt(index) == '('){
                 balance = balance + 1;
-            }
-
-            else if (str.charAt(index) == ')'){
+            }else if (str.charAt(index) == ')'){
                 balance = balance - 1;
-            } 
+        } 
 
         return checkBalance(str, index + 1, balance);
     }
