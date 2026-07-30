@@ -23,8 +23,8 @@ public class ParenthesesBalanceChecker {
             return false;
         }
         
-        if (balance == 0 && str.length() == index ){
-            return true;
+        if (str.length() == index ){
+            balance == 0;
         }
         
         if (str.charAt(index) == '('){
