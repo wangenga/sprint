@@ -21,8 +21,8 @@ public class PrimeFinder {
             return false;
         }
 
-        for (int n = 2; n * n < num ; n++ ){
-            if (num % n == 0){
+        for (int n = 2; n * n <= num ; n++ ){
+            if (num % n == 0 ){
                 return false;
             };
         }
