@@ -24,7 +24,7 @@ public class ParenthesesBalanceChecker {
         }
         
         if (str.length() == index ){
-            balance == 0;
+            return balance ==  0;
         }
         
         if (str.charAt(index) == '('){
