@@ -9,9 +9,7 @@ public class WeekendCalculator {
        
        
         if (x .isAfter(y)){
-            LocalDate temp = x;
-            x = y;
-            y = temp;
+            return 0;
         }
         
         LocalDate currentDate  = x;
