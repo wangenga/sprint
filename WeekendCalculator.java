@@ -20,6 +20,7 @@ public class WeekendCalculator {
             if (isWeekend(currentDate)){
                 weekend++;
             }
+            currentDate = currentDate.plusDays(1);
         }
         return weekend;
     }
