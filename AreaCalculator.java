@@ -1,25 +1,25 @@
 package sprint;
 public class AreaCalculator {
-    public static double calculateArea(int x){
+    public static double calculateArea(double x){
         double area = 0;
 
-        area =(double) x * x ;
+        area = x * x ;
 
         return area;
     }
 
-    public static double calculateArea(int x, int y){
+    public static double calculateArea(double x, double y){
         double area = 0;
 
-        area = (double) x * y ;
+        area = x * y ;
 
         return area;
     }
 
-    public static double calculateArea(int x, boolean m){
+    public static double calculateArea(double x, boolean m){
         
         if (m){
-            return (double) Math.PI * x * x ;
+            return Math.PI * x * x ;
             
         }else {
             return Double.NaN;
