@@ -1,4 +1,4 @@
-package sprint;
+//package sprint;
 public class AreaCalculator {
     public static double calculateArea(double x){
         double area = 0;
