@@ -1,9 +1,9 @@
 public class Main {
 
     public static void main(String[] args) {
-        Fibonacci calculator = new Fibonacci();
-        System.out.println(calculator.calculateFibonacci(6));
-        System.out.println(calculator.calculateFibonacci(-3));
+        GCDRecursive calculator = new GCDRecursive();
+        System.out.println(calculator.gcd(48, -18));
+        System.out.println(calculator.gcd(100, 75));
     }
 
 }
