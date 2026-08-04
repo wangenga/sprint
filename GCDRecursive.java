@@ -1,4 +1,4 @@
-package sprint;
+//package sprint;
 
 public class GCDRecursive {
     public static int gcd(int a, int b){

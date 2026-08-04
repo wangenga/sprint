@@ -1,4 +1,4 @@
-package sprint;
+//package sprint;
 
 public class OccurrenceCounter {
     public int countOccurrences(int[] arr, int element, int index){

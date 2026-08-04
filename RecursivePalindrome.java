@@ -1,4 +1,4 @@
-package sprint;
+//package sprint;
 
 public class RecursivePalindrome {
     public boolean isPalindrome(String str) {

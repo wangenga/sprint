@@ -1,4 +1,4 @@
-package sprint;
+//package sprint;
 
 public class PalindromeChecker {
     public static boolean isPalindrome(String x){
