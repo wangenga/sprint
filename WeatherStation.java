@@ -33,7 +33,13 @@ public class WeatherStation {
                 
                 // Only update if the ID falls within our known array bounds
                 if (id >= 0 && id <= 22) {
-                    state[id] = value;
+                    if  (value.equals("NULL")){
+                        state[id] = "NULL";
+                    } else {
+                        float floatValue = Float.parseFloat(value);
+                        state[id] = String.valueOf(floatValue);
+                    }
+                    
                 }
             }
         }
